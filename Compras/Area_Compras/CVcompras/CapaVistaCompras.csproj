@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14644058-FBAC-4C9D-BA4A-D443C57775F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CVcompras</RootNamespace>
+    <AssemblyName>CVcompras</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CCcompras">
+      <HintPath>..\CCcompras\bin\Debug\CCcompras.dll</HintPath>
+    </Reference>
+    <Reference Include="DLLnav">
+      <HintPath>..\..\..\PruebaNAvegador\ProyectoHSC22021\Componentes\Navegador\DLLnav\DLLnav\bin\Debug\DLLnav.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Area_Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Area_Compras.Designer.cs">
+      <DependentUpon>Area_Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionProveedores.Designer.cs">
+      <DependentUpon>frmGestionProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionCompras.Designer.cs">
+      <DependentUpon>frmGestionCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBodegas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBodegas.Designer.cs">
+      <DependentUpon>frmBodegas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMarca_linea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMarca_linea.Designer.cs">
+      <DependentUpon>frmMarca_linea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompra.Designer.cs">
+      <DependentUpon>frmCompra.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Area_Compras.resx">
+      <DependentUpon>Area_Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionCompras.resx">
+      <DependentUpon>frmGestionCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionProveedores.resx">
+      <DependentUpon>frmGestionProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBodegas.resx">
+      <DependentUpon>frmBodegas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMarca_linea.resx">
+      <DependentUpon>frmMarca_linea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompra.resx">
+      <DependentUpon>frmCompra.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

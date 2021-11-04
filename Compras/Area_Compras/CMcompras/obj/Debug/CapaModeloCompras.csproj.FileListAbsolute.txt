@@ -1,0 +1,6 @@
+C:\Users\mgado\Desktop\Compras\Area_Compras\CMcompras\bin\Debug\CMcompras.dll
+C:\Users\mgado\Desktop\Compras\Area_Compras\CMcompras\bin\Debug\CMcompras.pdb
+C:\Users\mgado\Desktop\Compras\Area_Compras\CMcompras\obj\Debug\CapaModeloCompras.csprojAssemblyReference.cache
+C:\Users\mgado\Desktop\Compras\Area_Compras\CMcompras\obj\Debug\CapaModeloCompras.csproj.CoreCompileInputs.cache
+C:\Users\mgado\Desktop\Compras\Area_Compras\CMcompras\obj\Debug\CMcompras.dll
+C:\Users\mgado\Desktop\Compras\Area_Compras\CMcompras\obj\Debug\CMcompras.pdb
